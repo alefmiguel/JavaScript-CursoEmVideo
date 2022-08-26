@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>  AULA 06 JS </title>
+</head>
+<body>
+	<h1> OLÁ, MUNDO! </h1>
+	<style>
+		body {
+			background-color: tomato;
+		}
+
+		h1 {
+			text-align: center;
+		}
+	</style>
+
+	<script>
+		// TRATAMENTO DE DADOS COM NÚMEROS
+		var n1 =  prompt('Digite um número: ');
+		var n2 = prompt('Digite outro número: ');
+		var soma = Number(n1) + Number(n2);
+
+		alert('A soma dos valores é: ' + soma);
+
+		// TRATAMENTO DE DADOS COM STRING
+		var nome = 'Álef Miguel';
+		var idade = 18;
+		var sexo = 'Masculino';
+
+		alert(`Meu nome é ${nome}`);
+		alert(`Eu tenho ${idade} anos de idade.`);
+		alert(`Meu sexo é ${sexo}.`);
+
+		// ATRIBUTOS E FUNÇÕES EXTRAS
+		var texto = 'JavaScript';
+		var valor = 10.345;
+
+		alert(`Esse texto tem ${texto.length} letras.`);
+		alert(`Esse em maiúsculo ${texto.toUpperCase()}.`)
+		alert(`Esse texto em minúsculo ${texto.toLowerCase()}.`);
+		alert(`O número ${valor} com duas casas decimais: ${valor.toFixed(2).replace('.', ',')}.`);
+		alert(`Tratamento em REAL: ${valor.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})}`);
+	</script>
+</body>
+</html>
